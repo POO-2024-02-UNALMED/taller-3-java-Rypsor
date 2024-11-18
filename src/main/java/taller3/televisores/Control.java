@@ -3,16 +3,16 @@ package taller3.televisores;
 public class Control {
     TV tv;
     
-    void enlazar(TV tvParaEnlazar){
+    public void enlazar(TV tvParaEnlazar){
         tv = tvParaEnlazar;
         tvParaEnlazar.setControl(this);
     }
 
-    TV getTv() {
+    public TV getTv() {
         return tv;
     }
 
-    void setTv(TV tv) {
+    public void setTv(TV tv) {
         this.tv = tv;
     }
 
