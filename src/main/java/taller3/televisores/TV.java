@@ -29,10 +29,10 @@ public class TV {
     }
 
     public void turnOn(){
-        this.estado = false;  // encender
+        this.estado = true;  // encender
     }
     public void turnOff(){        // apagar
-        this.estado = true;
+        this.estado = false;
     }
 
     public void canalUp(){                 // siguiente canal
