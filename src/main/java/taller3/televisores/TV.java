@@ -12,9 +12,9 @@ public class TV {
     public TV(Marca marca, boolean estado){
         this.marca = marca;
         this.estado = estado;
-        this.canal = canal;
-        this.precio = precio;
-        this.volumen = volumen;
+        this.canal = 1;
+        this.precio = 500;
+        this.volumen = 1;
         this.control = control;
         numTV++;
 
