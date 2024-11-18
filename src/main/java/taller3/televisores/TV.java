@@ -90,7 +90,9 @@ public class TV {
         return volumen;
     }
     public void setVolumen(int nuevoVolumen){
-        this.volumen = nuevoVolumen;
+        if (nuevoVolumen>=0 && nuevoVolumen<=7){
+            this.volumen = nuevoVolumen;}
+        
     }
 
     public Control getControl(){
