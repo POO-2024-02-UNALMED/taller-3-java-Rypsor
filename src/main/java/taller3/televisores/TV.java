@@ -50,12 +50,12 @@ public class TV {
 
     public void volumenUp(){
         if(estado && volumen < 7){
-            volumen++;
+            ++volumen;
         }
     }
     public void volumenDown(){
         if(estado && volumen >0){
-            volumen--;
+            --volumen;
         }
     }
     
@@ -75,7 +75,7 @@ public class TV {
         return canal;
     }
     public void setCanal(int nuevoCanal){
-        if (nuevoCanal>0 && nuevoCanal<121){
+        if (nuevoCanal>0 && nuevoCanal<121&& estado){
             this.canal = nuevoCanal;}
     }
 
@@ -90,7 +90,7 @@ public class TV {
         return volumen;
     }
     public void setVolumen(int nuevoVolumen){
-        if (nuevoVolumen>=0 && nuevoVolumen<=7){
+        if (nuevoVolumen>=0 && nuevoVolumen<=7 && estado){
             this.volumen = nuevoVolumen;}
         
     }
