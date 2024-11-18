@@ -75,7 +75,8 @@ public class TV {
         return canal;
     }
     public void setCanal(int nuevoCanal){
-        this.canal = nuevoCanal;
+        if (nuevoCanal>0 && nuevoCanal<121){
+            this.canal = nuevoCanal;}
     }
 
     public int getPrecio(){
